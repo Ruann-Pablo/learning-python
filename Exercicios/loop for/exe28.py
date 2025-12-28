@@ -28,7 +28,7 @@ for i in range(1, 5):
     divisor_media += 1
     soma_idade += idade
 
-media_idade = soma_idade / i
+media_idade = soma_idade / divisor_media
 
 print(f'A média de idade do grupo é de {media_idade} anos.')
 if mais_velho:
