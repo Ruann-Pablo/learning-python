@@ -5,7 +5,6 @@ guarda_idade = 0
 media_idade = 0
 
 for i in range(1, 5):
-    print(f'----{i}ª Pessoa----')
     nome = str(input('Nome: ')).strip().title()
     idade = int(input('Idade: '))
     sexo = str(input('Sexo [M/F]: ')).strip().upper()
