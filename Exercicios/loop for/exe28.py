@@ -1,0 +1,34 @@
+cont_mulher = 0
+mais_velho = ''
+soma_idade = 0
+guarda_idade = 0
+media_idade = 0
+
+for i in range(1, 5):
+    print(f'----{i}ª Pessoa----')
+    nome = str(input('Nome: ')).strip().title()
+    idade = int(input('Idade: '))
+    sexo = str(input('Sexo [M/F]: ')).strip().upper()
+
+    if idade <= 0:
+        print('Idade inválida')
+        continue
+
+    if sexo != 'M' and sexo != 'F':
+        print('Sexo inválido.')
+        continue
+
+    if sexo == 'F' and idade < 20:
+        cont_mulher += 1
+
+    if sexo == 'M' and guarda_idade < idade:
+        mais_velho = nome
+        guarda_idade = idade
+
+    soma_idade += idade
+
+media_idade = soma_idade / i
+
+print(f'A média de idade do grupo é de {media_idade} anos.')
+print(f'O homem mais velho tem {guarda_idade} anos se chama {mais_velho}')
+print(f'Ao todo são {cont_mulher} mulheres com menos de 20 anos')
