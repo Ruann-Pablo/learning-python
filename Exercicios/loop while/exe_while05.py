@@ -6,5 +6,3 @@ while i <= 10:
     print(f'{termo} -> ', end='')
     termo += razao
     i += 1
-
-    
