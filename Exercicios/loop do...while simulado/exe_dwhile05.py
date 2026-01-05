@@ -27,7 +27,6 @@ while True:
     if escolha == 'N':
         break
 
-
 print(f'Valor total da compra: R${valor_total}')
 print(f'Quantidade de produtos a cima de [R$1000.00]: {cont_prod_mil}')
 print(f'Poduto mais barato: {guarda_nome}, R${menor_preco}')
