@@ -1,7 +1,6 @@
 lista = []
-resposta = ''
 
-while resposta != 'n':
+while True:
     valor = int(input('Digite um valor: '))
 
     if valor in lista:
@@ -10,6 +9,9 @@ while resposta != 'n':
         lista.append(valor)
 
     resposta  = str(input('Quer continuar? [S/N]: ')).strip().lower()
+
+    if resposta == 'n':
+        break
 
 lista.sort()
 
