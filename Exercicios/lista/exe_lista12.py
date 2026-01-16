@@ -62,7 +62,3 @@ while True:
 
     if ver_nota == 999:
         break
-
-
-
-
