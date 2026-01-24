@@ -40,7 +40,10 @@ while True:
     if ver_jogador == 999:
         break
         
-    print(f'\nLevantamento do jogador {lista_jogadores[ver_jogador]["nome"]}:')
+    if ver_jogador > len(lista_jogadores):
+        print('Não existe jogador com esse id.')
+    else:
+        print(f'\nLevantamento do jogador {lista_jogadores[ver_jogador]["nome"]}:')
     
-    for indice in range(len(lista_jogadores[ver_jogador]["gols"])):
-        print(f'Na {indice + 1}ª partida fez {lista_jogadores[ver_jogador]["gols"][indice]}')
+        for indice in range(len(lista_jogadores[ver_jogador]["gols"])):
+            print(f'Na {indice + 1}ª partida fez {lista_jogadores[ver_jogador]["gols"][indice]}')
